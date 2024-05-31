@@ -6,15 +6,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.searchuser.dto.User;
-import com.example.searchuser.service.ServiceTest;
+import com.example.searchuser.service.UserService;
 
 @RestController
 @RequestMapping("user")
-public class ControllerImpl implements Controller {
+public class UserControllerImpl implements UserController {
 	
-	private final ServiceTest serviceTest;
+	private final UserService serviceTest;
 
-	public ControllerImpl(ServiceTest serviceTest) {
+	public UserControllerImpl(UserService serviceTest) {
 		this.serviceTest = serviceTest;
 	}
 	

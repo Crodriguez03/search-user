@@ -10,7 +10,7 @@ import com.example.searchuser.repository.UserElasticRepository;
 import com.example.searchuser.repository.UserRepository;
 
 @Service
-public class ServiceTestImpl implements ServiceTest {
+public class UserServiceImpl implements UserService {
 	
 	private final Logger log = LoggerFactory.getLogger(this.getClass().getSimpleName());
 	
@@ -20,7 +20,7 @@ public class ServiceTestImpl implements ServiceTest {
 	
 	private final UserElasticRepository userElasticRepository;
 	
-	public ServiceTestImpl(CacheUserService cacheUserService, UserRepository userRepository, UserElasticRepository userElasticRepository) {
+	public UserServiceImpl(CacheUserService cacheUserService, UserRepository userRepository, UserElasticRepository userElasticRepository) {
 		this.cacheUserService = cacheUserService;
 		this.userRepository = userRepository;
 		this.userElasticRepository = userElasticRepository;

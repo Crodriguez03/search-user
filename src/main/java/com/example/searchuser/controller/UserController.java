@@ -2,7 +2,7 @@ package com.example.searchuser.controller;
 
 import com.example.searchuser.dto.User;
 
-public interface Controller {
+public interface UserController {
 
 	String prueba();
 
