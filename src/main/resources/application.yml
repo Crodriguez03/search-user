@@ -1,0 +1,7 @@
+spring:
+   application.name: search-user
+   
+elasticsearch:
+  host: "localhost"  #elasticsearch.host
+  port: 9200         #elasticsearch.port
+  protocol: http      #elasticsearch.protocol
