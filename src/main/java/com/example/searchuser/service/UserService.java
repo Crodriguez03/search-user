@@ -1,6 +1,6 @@
 package com.example.searchuser.service;
 
-import com.example.searchuser.dto.User;
+import com.example.searchuser.model.User;
 
 public interface UserService {
 

@@ -1,6 +1,6 @@
 package com.example.searchuser.repository;
 
-import com.example.searchuser.dto.User;
+import com.example.searchuser.model.User;
 
 public interface UserElasticRepository {
 

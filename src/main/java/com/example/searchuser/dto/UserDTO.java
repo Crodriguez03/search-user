@@ -1,4 +1,4 @@
-package com.example.searchuser.model;
+package com.example.searchuser.dto;
 
 public class UserDTO {
 	

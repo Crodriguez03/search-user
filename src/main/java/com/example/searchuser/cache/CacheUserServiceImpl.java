@@ -12,7 +12,7 @@ import org.springframework.data.redis.core.SessionCallback;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
-import com.example.searchuser.dto.User;
+import com.example.searchuser.model.User;
 
 @Component
 public class CacheUserServiceImpl implements CacheUserService {

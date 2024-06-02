@@ -1,4 +1,4 @@
-package com.example.searchuser.dto;
+package com.example.searchuser.model;
 
 import java.io.Serializable;
 

@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import com.example.searchuser.cache.CacheUserService;
-import com.example.searchuser.dto.User;
+import com.example.searchuser.model.User;
 import com.example.searchuser.repository.UserElasticRepository;
 import com.example.searchuser.repository.UserRepository;
 

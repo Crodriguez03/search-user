@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.searchuser.dto.User;
+import com.example.searchuser.model.User;
 import com.example.searchuser.service.UserService;
 
 @RestController
