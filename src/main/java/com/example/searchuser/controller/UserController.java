@@ -1,11 +1,11 @@
 package com.example.searchuser.controller;
 
-import com.example.searchuser.model.User;
+import com.example.searchuser.dto.UserDTO;
 
 public interface UserController {
 
 	String prueba();
 
-	User findUser(String userId);
+	UserDTO findUser(String userId);
 	
 }

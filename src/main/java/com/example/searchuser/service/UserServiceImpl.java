@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import com.example.searchuser.cache.CacheUserService;
+import com.example.searchuser.dto.UserDTO;
 import com.example.searchuser.model.User;
 import com.example.searchuser.repository.UserElasticRepository;
 import com.example.searchuser.repository.UserRepository;
@@ -42,11 +43,13 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public User findUser(String userId) {
+	public UserDTO findUser(String userId) {
 		// TODO Auto-generated method stub
 		userRepository.findById(userId);
 		
 		cacheUserService.findUserFromCacheTemplate(userId);
-		return userElasticRepository.findById(userId);
+		User user = userElasticRepository.findById(userId);
+		
+		return null;
 	}
 }

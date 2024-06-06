@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.searchuser.model.User;
+import com.example.searchuser.dto.UserDTO;
 import com.example.searchuser.service.UserService;
 
 @RestController
@@ -27,8 +27,7 @@ public class UserControllerImpl implements UserController {
 	
 	@Override
 	@GetMapping("{userId}")
-	public User findUser(@PathVariable String userId) {
-		User user = serviceTest.findUser(userId);
-		return user;
+	public UserDTO findUser(@PathVariable String userId) {
+		return serviceTest.findUser(userId);
 	}	
 }

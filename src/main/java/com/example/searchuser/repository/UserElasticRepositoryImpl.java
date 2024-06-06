@@ -63,7 +63,6 @@ public class UserElasticRepositoryImpl implements UserElasticRepository {
 	protected SearchResponse searchResponse(SearchSourceBuilder searchSourceBuilder) {
 		SearchRequest searchRequest = new SearchRequest(INDEX).source(searchSourceBuilder);
 		
-		SearchResponse searchResponse;
 		try {
 			return elasticHighClient.search(searchRequest);
 		} catch (IOException e) {

@@ -1,10 +1,10 @@
 package com.example.searchuser.service;
 
-import com.example.searchuser.model.User;
+import com.example.searchuser.dto.UserDTO;
 
 public interface UserService {
 
 	void prueba();
 
-	User findUser(String userId);
+	UserDTO findUser(String userId);
 }
