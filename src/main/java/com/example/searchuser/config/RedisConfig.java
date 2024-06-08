@@ -8,7 +8,7 @@ import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactor
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
-import com.example.searchuser.model.User;
+import com.example.searchuser.dto.UserDTO;
 
 @Configuration
 public class RedisConfig {
@@ -19,9 +19,9 @@ public class RedisConfig {
 	}
 
 	@Bean
-	RedisTemplate<String, User> redisTemplate(RedisConnectionFactory connectionFactory) {
+	RedisTemplate<String, UserDTO> redisTemplate(RedisConnectionFactory connectionFactory) {
 
-		RedisTemplate<String, User> template = new RedisTemplate<>();
+		RedisTemplate<String, UserDTO> template = new RedisTemplate<>();
 		template.setConnectionFactory(connectionFactory);
 		template.setKeySerializer(new StringRedisSerializer());
         template.setHashKeySerializer(new StringRedisSerializer());

@@ -1,11 +1,9 @@
 package com.example.searchuser.controller;
 
-import com.example.searchuser.model.User;
-
 public interface UserController {
 
-	String prueba();
+	void createUsers();
 
-	User findUser(String userId);
+	void report(String startName);
 	
 }

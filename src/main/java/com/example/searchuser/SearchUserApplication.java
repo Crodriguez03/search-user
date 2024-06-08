@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SearchUserApplication {
 
 	public static void main(String[] args) {
+		System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism","10");
 		SpringApplication.run(SearchUserApplication.class, args);
 	}
 

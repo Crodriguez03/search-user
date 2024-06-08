@@ -1,11 +1,16 @@
 package com.example.searchuser.repository;
 
-import com.example.searchuser.model.User;
+import java.util.Collection;
+import java.util.List;
+
+import com.example.searchuser.model.UserIndex;
 
 public interface UserElasticRepository {
 
-	User index(User user);
+	void index(UserIndex user);
 
-	User findById(String id);
+	List<String> findUsersIdStartNameWith(String startName);
+
+	void indexBulk(Collection<UserIndex> users);
 
 }
